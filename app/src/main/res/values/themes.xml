@@ -6,6 +6,7 @@
         <item name="colorAccent">@color/color_secondary</item>
         <item name="android:colorBackground">@color/color_background</item>
         <item name="android:statusBarColor">@color/color_primary_dark</item>
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
     <style name="Theme.NusantaraHeritageMarketplace" parent="Base.Theme.NusantaraHeritageMarketplace" />

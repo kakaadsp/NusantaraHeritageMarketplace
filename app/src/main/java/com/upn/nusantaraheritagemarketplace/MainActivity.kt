@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
     private var isGridMode = false
     private val heritageList = mutableListOf<HeritageItem>()
 
+    companion object {
+        private const val KEY_IS_GRID_MODE = "is_grid_mode"
+    }
+
     // =========================================================
     // registerForActivityResult: Menangkap data balik dari Detail
     // =========================================================
@@ -59,6 +63,11 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Restore state grid mode (agar tidak hilang saat rotasi)
+        if (savedInstanceState != null) {
+            isGridMode = savedInstanceState.getBoolean(KEY_IS_GRID_MODE, false)
+        }
+
         // Setup Toolbar
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -70,8 +79,13 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
         // Muat data warisan budaya dari resources
         loadHeritageData()
 
-        // Setup RecyclerView dengan LinearLayoutManager (default: List Vertikal)
+        // Setup RecyclerView sesuai state yang tersimpan
         setupRecyclerView()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean(KEY_IS_GRID_MODE, isGridMode)
     }
 
     /**
@@ -131,7 +145,13 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
         adapter = HeritageAdapter(heritageList, this)
 
         recyclerView.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = if (isGridMode) {
+                adapter.viewType = HeritageAdapter.VIEW_TYPE_GRID
+                GridLayoutManager(this@MainActivity, 2)
+            } else {
+                adapter.viewType = HeritageAdapter.VIEW_TYPE_LIST
+                LinearLayoutManager(this@MainActivity)
+            }
             adapter = this@MainActivity.adapter
             setHasFixedSize(true)
         }
@@ -158,6 +178,9 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
             menuItem.title = getString(R.string.switch_to_grid)
             Toast.makeText(this, "📋 Tampilan List Aktif", Toast.LENGTH_SHORT).show()
         }
+
+        // Scroll ke paling atas setelah toggle
+        recyclerView.scrollToPosition(0)
     }
 
     // =========================================================
@@ -185,6 +208,15 @@ class MainActivity : AppCompatActivity(), OnHeritageClickListener {
     // =========================================================
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+        // Update icon sesuai state saat ini (setelah restore dari savedInstanceState)
+        val toggleItem = menu.findItem(R.id.menu_toggle_layout)
+        if (isGridMode) {
+            toggleItem?.setIcon(R.drawable.ic_list_view)
+            toggleItem?.title = getString(R.string.switch_to_list)
+        } else {
+            toggleItem?.setIcon(R.drawable.ic_grid_view)
+            toggleItem?.title = getString(R.string.switch_to_grid)
+        }
         return true
     }
 
