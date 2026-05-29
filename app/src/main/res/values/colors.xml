@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors - Deep Cultural Batik Palette -->
+    <color name="color_primary">#8B1A1A</color>
+    <color name="color_primary_dark">#5C0F0F</color>
+    <color name="color_primary_light">#C0392B</color>
+    <color name="color_secondary">#D4A843</color>
+    <color name="color_secondary_dark">#B8860B</color>
+    <color name="color_secondary_light">#F0C060</color>
+    <color name="color_accent">#2C7873</color>
+
+    <!-- Background Colors -->
+    <color name="color_background">#FBF5EB</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_card_bg">#FFFDF8</color>
+    <color name="color_toolbar_bg">#8B1A1A</color>
+
+    <!-- Text Colors -->
+    <color name="color_text_primary">#1A1A1A</color>
+    <color name="color_text_secondary">#5D4037</color>
+    <color name="color_text_hint">#9E9E9E</color>
+    <color name="color_text_on_primary">#FFFFFF</color>
+
+    <!-- Rarity Colors -->
+    <color name="color_rarity_very_rare">#6A1B9A</color>
+    <color name="color_rarity_rare">#1565C0</color>
+    <color name="color_rarity_protected">#2E7D32</color>
+
+    <!-- Favorite Colors -->
+    <color name="color_favorite">#E91E63</color>
+    <color name="color_not_favorite">#9E9E9E</color>
+
+    <!-- Divider / Border -->
+    <color name="color_divider">#E0D5C5</color>
+    <color name="color_card_stroke">#D4A843</color>
+
+    <!-- Gradient Colors -->
+    <color name="color_gradient_start">#8B1A1A</color>
+    <color name="color_gradient_end">#D4A843</color>
+
+    <!-- Legacy colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

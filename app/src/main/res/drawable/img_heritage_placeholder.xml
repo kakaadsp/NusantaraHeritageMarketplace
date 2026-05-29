@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Background -->
+    <path
+        android:fillColor="#8B1A1A"
+        android:pathData="M0,0 L200,0 L200,200 L0,200 Z" />
+    <!-- Borobudur silhouette -->
+    <path
+        android:fillColor="#D4A843"
+        android:pathData="M100,40 L60,100 L40,140 L160,140 L140,100 Z" />
+    <path
+        android:fillColor="#C0392B"
+        android:pathData="M80,60 L100,40 L120,60 Z" />
+    <!-- Decorative circles (stupa) -->
+    <path
+        android:fillColor="#F0C060"
+        android:pathData="M100,30 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+    <!-- Base -->
+    <path
+        android:fillColor="#D4A843"
+        android:pathData="M30,140 L170,140 L180,160 L20,160 Z" />
+    <!-- Text area -->
+    <path
+        android:fillColor="#5C0F0F"
+        android:pathData="M20,165 L180,165 L180,185 L20,185 Z" />
+</vector>

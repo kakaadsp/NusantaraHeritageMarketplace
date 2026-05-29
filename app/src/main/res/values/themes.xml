@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NusantaraHeritageMarketplace" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_secondary</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@color/color_primary_dark</item>
+    </style>
+
+    <style name="Theme.NusantaraHeritageMarketplace" parent="Base.Theme.NusantaraHeritageMarketplace" />
+
+    <!-- Custom Toolbar Style -->
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/color_toolbar_bg</item>
+        <item name="titleTextColor">@color/color_text_on_primary</item>
+        <item name="subtitleTextColor">@color/color_secondary_light</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="HeritageCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">6dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/color_card_bg</item>
+        <item name="strokeColor">@color/color_card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Rarity Chip Style (base) -->
+    <style name="RarityChip" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/bg_rarity_chip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="FavoriteButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/color_favorite</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="ActionButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <!-- ShapeAppearanceOverlay for rounded images in list -->
+    <style name="RoundedImageStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- ShapeAppearanceOverlay for top rounded images in grid -->
+    <style name="TopRoundedImageStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+</resources>

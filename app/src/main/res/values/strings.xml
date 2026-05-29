@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nusantara Heritage</string>
+
+    <!-- Heritage Names -->
+    <string-array name="heritage_names">
+        <item>Candi Borobudur</item>
+        <item>Batik Jawa</item>
+        <item>Wayang Kulit</item>
+        <item>Tari Kecak Bali</item>
+        <item>Keris Nusantara</item>
+        <item>Rumah Gadang</item>
+        <item>Gamelan Jawa</item>
+        <item>Tenun Ikat NTT</item>
+        <item>Tari Saman Aceh</item>
+        <item>Tongkonan Toraja</item>
+    </string-array>
+
+    <!-- Heritage Origins -->
+    <string-array name="heritage_origins">
+        <item>Magelang, Jawa Tengah</item>
+        <item>Jawa, Indonesia</item>
+        <item>Jawa, Indonesia</item>
+        <item>Bali, Indonesia</item>
+        <item>Nusantara, Indonesia</item>
+        <item>Sumatera Barat</item>
+        <item>Jawa, Indonesia</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Aceh, Indonesia</item>
+        <item>Sulawesi Selatan</item>
+    </string-array>
+
+    <!-- Heritage Categories -->
+    <string-array name="heritage_categories">
+        <item>Cagar Budaya</item>
+        <item>Seni Tekstil</item>
+        <item>Seni Pertunjukan</item>
+        <item>Tari Tradisional</item>
+        <item>Senjata Tradisional</item>
+        <item>Arsitektur Tradisional</item>
+        <item>Musik Tradisional</item>
+        <item>Seni Tekstil</item>
+        <item>Tari Tradisional</item>
+        <item>Arsitektur Tradisional</item>
+    </string-array>
+
+    <!-- Heritage Years -->
+    <string-array name="heritage_years">
+        <item>825</item>
+        <item>1800</item>
+        <item>900</item>
+        <item>1930</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>900</item>
+        <item>500</item>
+        <item>1200</item>
+        <item>1000</item>
+    </string-array>
+
+    <!-- Heritage Descriptions -->
+    <string-array name="heritage_descriptions">
+        <item>Candi Borobudur adalah candi Buddha terbesar di dunia yang dibangun pada abad ke-9 oleh Dinasti Syailendra. Terletak di Magelang, Jawa Tengah, candi ini memiliki 2.672 panel relief dan 504 arca Buddha. Diakui UNESCO sebagai Situs Warisan Dunia pada tahun 1991.</item>
+        <item>Batik adalah kain tradisional Indonesia yang dibuat dengan teknik pewarnaan menggunakan malam (lilin batik). Batik Jawa terkenal dengan motif-motifnya yang kaya makna filosofis. UNESCO mengakui Batik sebagai Warisan Budaya Tak Benda pada tahun 2009.</item>
+        <item>Wayang Kulit adalah seni pertunjukan tradisional yang menggunakan boneka kulit yang disorot dari belakang layar. Pertunjukan ini biasanya menampilkan cerita dari epos Mahabharata dan Ramayana. UNESCO mengakuinya sebagai Masterpiece of Oral and Intangible Heritage pada 2003.</item>
+        <item>Tari Kecak adalah tarian yang berasal dari Bali yang menampilkan sekelompok pria yang duduk melingkar dan meneriakkan kata \'cak\'. Tarian ini diciptakan pada tahun 1930-an oleh seniman Wayan Limbak. Pertunjukan ini biasanya bercerita tentang kisah Ramayana.</item>
+        <item>Keris adalah senjata tradisional Indonesia yang memiliki bentuk bilah asimetris khas dengan gagang yang dihiasi. Keris dianggap memiliki kekuatan mistis dan digunakan dalam berbagai upacara adat. UNESCO mengakui Keris sebagai Warisan Budaya Tak Benda pada tahun 2005.</item>
+        <item>Rumah Gadang adalah rumah adat tradisional masyarakat Minangkabau di Sumatera Barat. Ciri khasnya adalah atap yang berbentuk seperti tanduk kerbau atau pelana dan berbahan ijuk. Rumah ini merupakan pusat kehidupan sosial dan budaya masyarakat Minangkabau.</item>
+        <item>Gamelan adalah ansambel musik tradisional Jawa yang terdiri dari berbagai instrumen pukul. Instrumen utamanya meliputi gong, kenong, saron, dan bonang. Musik gamelan telah ada sejak abad ke-9 dan digunakan dalam berbagai upacara keagamaan dan pertunjukan.</item>
+        <item>Tenun Ikat adalah kain tradisional yang dibuat oleh masyarakat Nusa Tenggara Timur dengan teknik ikat sebelum ditenun. Setiap daerah di NTT memiliki motif yang khas dan berbeda. Proses pembuatannya yang rumit bisa memakan waktu berbulan-bulan untuk satu helai kain.</item>
+        <item>Tari Saman adalah tari tradisional yang berasal dari suku Gayo di Aceh. Tarian ini menampilkan gerakan yang cepat dan terkoordinasi dari sekelompok penari yang duduk. UNESCO mengakui Tari Saman sebagai Warisan Budaya Tak Benda yang Membutuhkan Perlindungan Mendesak pada 2011.</item>
+        <item>Tongkonan adalah rumah adat masyarakat Toraja di Sulawesi Selatan yang terkenal dengan atap melengkung menyerupai perahu. Rumah ini bukan sekadar tempat tinggal, tetapi juga merupakan pusat kehidupan sosial, budaya, dan spiritual masyarakat Toraja.</item>
+    </string-array>
+
+    <!-- Heritage Locations (for Google Maps) -->
+    <string-array name="heritage_locations">
+        <item>Candi Borobudur, Magelang, Jawa Tengah, Indonesia</item>
+        <item>Batik Jawa, Solo, Jawa Tengah, Indonesia</item>
+        <item>Museum Wayang, Jakarta, Indonesia</item>
+        <item>Uluwatu, Bali, Indonesia</item>
+        <item>Museum Keris, Solo, Jawa Tengah, Indonesia</item>
+        <item>Bukittinggi, Sumatera Barat, Indonesia</item>
+        <item>Keraton Yogyakarta, Yogyakarta, Indonesia</item>
+        <item>Larantuka, Nusa Tenggara Timur, Indonesia</item>
+        <item>Gayo, Aceh, Indonesia</item>
+        <item>Rantepao, Toraja, Sulawesi Selatan, Indonesia</item>
+    </string-array>
+
+    <!-- UI Strings -->
+    <string name="favorite_status_label">Status Favorit:</string>
+    <string name="favorite_yes">Ya ❤️</string>
+    <string name="favorite_no">Tidak 🤍</string>
+    <string name="btn_mark_favorite">★ Tandai Favorit</string>
+    <string name="btn_open_maps">📍 Lihat di Google Maps</string>
+    <string name="btn_open_browser">🌐 Baca Artikel</string>
+    <string name="rarity_label">Tingkat Kelangkaan:</string>
+    <string name="year_label">Tahun Penemuan:</string>
+    <string name="origin_label">Asal Daerah:</string>
+    <string name="category_label">Kategori:</string>
+    <string name="description_label">Deskripsi:</string>
+    <string name="switch_to_grid">Grid View</string>
+    <string name="switch_to_list">List View</string>
+    <string name="detail_title">Detail Warisan Budaya</string>
+
+    <!-- Integer-array untuk gambar warisan budaya (drawable resource IDs) -->
+    <!-- Menggunakan img_heritage_placeholder sebagai referensi lokal -->
+    <integer-array name="heritage_images">
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+        <item>@drawable/img_heritage_placeholder</item>
+    </integer-array>
+</resources>
